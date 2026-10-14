@@ -70,3 +70,62 @@ Clone the repository:
 ```bash
 git clone https://github.com/hemant72gith/Voice-Based-Concept-Understanding-Analyser.git
 cd Voice-Based-Concept-Understanding-Analyser
+
+Create and activate a virtual environment:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+Install dependencies:
+
+```bash
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+streamlit run app.py
+```
+
+Open the local URL printed in the terminal.
+
+## Testing
+
+Run the available automated tests using:
+
+```bash
+python -m pytest
+```
+
+Verify the test results before reporting that the project has passed testing.
+
+## Limitations
+
+- Transcription quality depends on recording quality, accent, language, and the selected speech-recognition model.
+- Semantic similarity is an estimate of textual relevance, not proof of complete conceptual understanding.
+- Pause detection and audio metrics depend on the audio-processing method and configured thresholds.
+- Model downloads and available system resources may affect the initial execution time.
+- The generated score is an indicative evaluation and should not be treated as a scientifically validated assessment.
+
+## Future Enhancements
+
+- Support for additional languages.
+- Improved pause and speech-segment detection.
+- More comprehensive concept coverage evaluation.
+- Comparison of multiple recordings over time.
+- Improved visual analytics and downloadable reports.
+- Deployment with suitable resource management and model caching.
+
+## Project Status
+
+**Status: Successfully Implemented and Running Locally**
+
+The Voice-Based Concept Understanding Analyser (VBCUA) has been implemented as a Streamlit-based application integrating speech transcription, semantic similarity analysis, filler-word detection, audio feature extraction, performance scoring, and report generation.
+
+The application interface is running locally, and the project is being prepared for deployment on Streamlit Community Cloud. Cloud deployment and end-to-end verification of the hosted application remain to be completed.
+
+The project is structured to support further testing, deployment, and future enhancements.
