@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Photosynthesis",
+    "explanation": "Photosynthesis is the process by which green plants use sunlight, water, and carbon dioxide to make glucose for energy and release oxygen. Chlorophyll in the leaves captures light energy, which helps convert the raw materials into sugar."
+  },
+  {
+    "title": "Gravity",
+    "explanation": "Gravity is an attractive force between objects with mass. On Earth it pulls objects toward the planet's centre, giving them weight. The strength of gravitational attraction depends on the masses involved and the distance between them."
+  },
+  {
+    "title": "Machine Learning",
+    "explanation": "Machine learning is a field of artificial intelligence in which a computer learns patterns from examples or data. A model uses those patterns to make predictions or decisions on new inputs, and its performance can improve through training and evaluation."
+  },
+  {
+    "title": "Water Cycle",
+    "explanation": "The water cycle describes how water moves between Earth's surface and atmosphere. Sunlight causes evaporation, water vapour cools and condenses into clouds, and precipitation returns water to land and oceans, where it can collect or flow."
+  }
+]
