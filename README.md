@@ -37,7 +37,7 @@ This score is a practice aid, not a scientifically validated assessment. Semanti
 ## Prerequisites
 
 - Windows 10/11, 64-bit.
-- Python 3.11 recommended. Whisper upstream documents Python 3.8–3.11 as its expected range. This workspace used Python 3.14.4; the app startup and unit tests run there, but model inference was not verified on that interpreter.
+- Python 3.11 recommended for local and Cloud parity. The current project environment uses Python 3.11.0; dependency imports, unit tests, and Streamlit startup were checked there. Actual Whisper and Sentence Transformers model inference was not run during the deployment-readiness check.
 - Internet for dependency installation and first-time model downloads. Model weights are cached locally afterward.
 
 ## Windows setup
@@ -74,6 +74,12 @@ python -m streamlit run app.py
 ```
 
 Choose a sample reference or enter your own, upload a recording, review its waveform, and select **Analyse my explanation**. The default Whisper model is `tiny`; the first analysis downloads the Whisper weights and the default Sentence Transformers model.
+
+## Deploy to Streamlit Community Cloud
+
+The Streamlit entry point is the root-level `app.py`, and the dependencies are declared in the root-level `requirements.txt`. When creating the Cloud app, select this repository, the `main` branch, and `app.py`; choose Python 3.11 in Advanced settings to match the checked local environment. The app does not require secrets or API keys.
+
+The first analysis downloads the Whisper and Sentence Transformers model files. Loaded models are cached for the life of the app process. Start with Whisper's `tiny` model on Community Cloud; the `base` and `small` choices use more memory and may be slow or exceed the available resources. Uploads are limited to 50 MB by the Streamlit configuration and the app's own validation.
 
 ## Run the tests
 

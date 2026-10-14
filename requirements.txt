@@ -1,10 +1,12 @@
-# Compatible version ranges; Python 3.11 is recommended for Whisper on Windows.
-streamlit>=1.40,<2.0
-openai-whisper>=20240930,<20270000
-sentence-transformers>=3.0,<6.0
-librosa>=0.10.2,<0.12
-soundfile>=0.12,<0.15
-matplotlib>=3.8,<4.0
-reportlab>=4.2,<6.0
-imageio-ffmpeg>=0.5,<1.0
-python-dotenv>=1.0,<2.0
+# Pinned to the versions installed in the Python 3.11 workspace.
+streamlit==1.65.0
+openai-whisper==20250625
+sentence-transformers==5.7.0
+librosa==0.11.0
+soundfile==0.14.0
+matplotlib==3.11.2
+reportlab==5.0.1
+imageio-ffmpeg==0.6.0
+python-dotenv==1.2.4
+numpy==2.4.6
+scipy==1.17.1

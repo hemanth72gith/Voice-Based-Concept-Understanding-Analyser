@@ -1,0 +1,3 @@
+[server]
+# Match VBCUA_MAX_UPLOAD_MB's default in app.py.
+maxUploadSize = 50
